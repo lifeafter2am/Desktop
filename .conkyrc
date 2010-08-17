@@ -1,0 +1,12 @@
+# Set to yes if you want Conky to be forked in the background
+background no
+
+out_to_console yes
+
+# Update interval in seconds
+update_interval 1
+
+color1 ef89bb
+
+TEXT
+^fg(\#1086b8)| ^i(/home/ishikawa/.dzen/cpu.xbm) ^fg(\#ffffff)${cpu cpu1}% ^fg(\#1086b8) ^i(/home/ishikawa/.dzen/cpu.xbm) ^fg(\#ffffff)${cpu cpu2}% ^fg(\#1086b8)^i(/home/ishikawa/.dzen/cpu.xbm) ^fg(\#ffffff)${cpu cpu3}% ^fg(\#1086b8) ^i(/home/ishikawa/.dzen/cpu.xbm) ^fg(\#ffffff)${cpu cpu4}% @ $freq_g Ghz ^fg(\#1086b8)| ^i(/home/ishikawa/.dzen/mem.xbm) ^fg(\#ffffff)$mem/$memmax ^fg(\#1086b8)| ^i(/home/ishikawa/.dzen/net_down.xbm) ^fg(\#ffffff)${downspeed wlan0} ^fg(\#1086b8)^i(/home/ishikawa/.dzen/net_up.xbm) ^fg(\#ffffff)${upspeed wlan0} ^fg(\#1086b8)| ^i(/home/ishikawa/.dzen/clock.xbm) ^fg(\#ffffff)${time} ^fg(\#1086b8)| 

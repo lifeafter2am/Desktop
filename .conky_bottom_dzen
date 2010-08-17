@@ -1,0 +1,14 @@
+# Set to yes if you want Conky to be forked in the background
+background no
+ 
+out_to_console yes
+ 
+# Update interval in seconds
+update_interval 1
+ 
+# MPD host/port
+mpd_host localhost
+mpd_port 6600
+ 
+TEXT
+^fg(\#1086b8)|| ^i(/home/ishikawa/.dzen/net_up_03.xbm) ^fg(\#ffffff)$uptime ^fg(\#1086b8)| ^fg(\#1994d1) ^i(/home/ishikawa/.dzen/arch.xbm) ^fg(\#ffffff)${texeci 1500 perl /home/ishikawa/.pac_updates.pl} ^fg(\#1086b8)| ^fg(\#1086b8)^i(/home/ishikawa/.dzen/diskette.xbm) /root ^fg(\#ffffff)${fs_used /}/${fs_size /} ^fg(\#1086b8) /home ^fg(\#ffffff)${fs_used /home}/${fs_size /home} ^fg(\#1086b8)| ^i(/home/ishikawa/.dzen/note.xbm) ^fg(\#ffffff)$mpd_status : ${mpd_smart 80} ($mpd_elapsed / $mpd_length) ^fg(\#1086b8)||
